@@ -45,7 +45,7 @@ Just click copy button on the right.
      wget https://harahara777.github.io/pps-kohya-setup/kohya-lora.ipynb
      ```
      * Or you can manualy download notebooks and drag and drop to your directory  
-[https://harahara777.github.io/pps-kohya-setup/kohya-lora.ipynb](https://harahara777.github.io/pps-kohya-setup/kohya-lora.ipynb)
+[https://harahara777.github.io/pps-kohya-setup/kohya-lora.ipynb](https://harahara777.github.io/kohya-lora-paperspace/kohya-lora.ipynb)
 <br>
 
 * Execute cells in order from top to bottom.
