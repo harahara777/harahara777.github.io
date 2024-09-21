@@ -1,4 +1,4 @@
-# Paparspace Notebook for kohya Gui lora training
+# [Paparspace Notebook for kohya Gui lora training](https://github.com/harahara777/kohya-lora-paperspace)
 * This notebook is created with reference to [ffxvs](https://github.com/ffxvs)'s [sd-webui-complete-setup](https://github.com/ffxvs/sd-webui-complete-setup).
 * We use specialized dokcer published by [ffxvs](https://github.com/ffxvs) to simplify the preparation of the environment.  
 It includes python, torch, etc., and allows us to prepare an environment without going through complicated steps.
