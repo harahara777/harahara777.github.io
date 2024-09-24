@@ -19,11 +19,11 @@ Just click copy button on the right.
    * Container's name
      * SD Web UI
      ```
-       ffxvs/sd-webui-containers:auto1111-latest      
+       ffxvs/sd-webui-containers:auto1111-2024.09.21      
      ```
      * SD Web UI Forge
      ```
-       ffxvs/sd-webui-containers:forge-latest
+       ffxvs/sd-webui-containers:forge-2024.09.21
      ```
   * Container's command
      ```
@@ -32,10 +32,10 @@ Just click copy button on the right.
 * Click ***"Start notebook"*** bellow and wait until the machine is running.
 * Click ***"Open in JupiterLab"*** in left side bar.
 * You will have 3 notebooks, click to open one of ***"sd_webui_paperspace.ipynb"*** or ***"sd_webui_forge_paperspace.ipynb"***.
-* Execute cells in order from top to bottom untill ***"2.1 Webui setup"***.
-* In ***"2.1 Webui setup"*** You need change the value of "temp_sdxl_models = boolean[0]" to "temp_sdxl_models = boolean[1]"  
-  If you want to use temp storage for SDXL model.
-* Now you have prepared the temporary area and set up the shared storage, you are ready to setup kohya-gui.
+* Execute cells in order from top to bottom untill ***"1.3. Temporary Storage Settings"***.
+* In ***"1.3. Temporary Storage Settings"*** you can choose which model type to use temporary storage.  
+  Check the model type you want to save in the temporary storage.
+* Now you have prepared the temporary storage and set up the shared storage, you are ready to setup kohya-gui.
 ### For more infomation about SD-webui setup and usage please see [here](https://github.com/ffxvs/sd-webui-complete-setup).
 ## Kohya GUI
 * You need download Kohya-Lora.ipynb from this repository, Run the below command in terminal.
@@ -55,12 +55,13 @@ It is recommended to run it if you are using the GUI for the first time.
 * There are minimal features related to datasets, which are currently being developed.
 * The download function is included in [sd-webui-complete-setup](https://github.com/ffxvs/sd-webui-complete-setup) notebooks. There are 1.5 and SDXL versions, please choose according to your purpose.
 ## Here are some tips on some common problems you may encounter.
-* When you copy a path of file or folder, it will be **"folder/file.txt"**, but when you actually use it, the correct path is **"/notebooks/folder/file.txt"**.
+* When you copy a path of file or folder, it will be **"notebooks/folder/file.txt"**, but when you actually use it, the correct path is **"/notebooks/folder/file.txt"**.
 * Don't just right-click and delete files, use **"Delete File or Folder"** function.
 * When the GUI launches, **Dreambooth** is selected by default, make sure select **Lora** tab for lora training.
 * Once training is started, you don't need to keep blower tab opnen, Training process continues even if you shut down your PC.
 ## Known Issue
-* Some of the console logs INfo contain file paths and are very difficult to read. There is currently no workaround.
+* Some of the console logs Info contain file paths and are very difficult to read.  
+  please add **--console_log_simple** to additinal paramaters for avoid messy console logs.
 * Tenderflow and tenserRT is not installed because of some issues, so logging with them is currently not possible for now.
 
 <br>
